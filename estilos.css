@@ -1,0 +1,133 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*Selector universal*/
+* {
+  /*resetear navegadores*/
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /*para que aplique a toda la pagina */
+  font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+  line-height: 1.3em;
+  font-size: 1em; /*para fuente */
+  /* repeat x para que me repuita en x*/
+  /*PONGO EL COLOR E IMAGEN A LA VEZ interesante hay que probar */
+  background: #0067af url("fondo.jpg") repeat-x; /* para fondo de pagina, not repeat para que aparezca una vez*/
+}
+/*solo pongo el punto me aparece el contenedor */
+.contenedor {
+  width: 80%; /* */
+  max-width: 1000px; /*que tenga el 80% pero como max 1000px, probar detalle */
+  background: #fff; /*color blanco */
+
+  /* para centrar*/
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+
+  /* resumir margin de la siguiente manera*/
+  /* margin: 20px auto;*/
+
+  /* border redondeado*/
+  border-radius: 2%;
+}
+
+/* el header es predefinido en html*/
+header {
+  width: 100%;
+  float: left;
+}
+
+header h1 {
+  margin-left: 20px;
+  float: left; /*flotando a la izq */
+}
+
+header h2 {
+  float: right;
+  font-size: 1.3em;
+
+  /*ubicacion*/
+  margin-top: 110px;
+  margin-right: 50px;
+}
+
+nav {
+  width: 100%;
+  clear: both;
+  padding: 5px;
+}
+
+nav ul {
+  width: 100%;
+  list-style: none; /*para que no me aparezca el punto por defecto del las listas */
+  margin-bottom: 30px; /* para separar*/
+}
+
+nav ul li {
+  /*alinear textos*/
+  text-align: center;
+
+  /*dividir entre los 4 menus*/
+  width: 20%;
+
+  float: left;
+}
+
+/*aside para columna */
+
+aside {
+  width: 30%;
+  float: right;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+aside article {
+  width: 90%;
+  margin-bottom: 50px;
+  margin-bottom: dotted 1px #5e5c5c;
+  padding-bottom: 20px;
+}
+
+aside article img {
+  width: 250px;
+}
+
+section {
+  padding: 20%; /* para que no quede pegado el texto*/
+}
+
+section h1 {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
+section p {
+  line-height: 1.5em; /*para serapara */
+}
+footer {
+  width: 100%;
+  clear: both;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+/* parrafo del footer*/
+
+footer p {
+  font-size: 0.7em;
+  color: #645f60;
+}
+
+footer a:link,
+footer a:visited {
+  color: #645f60;
+}
+
+footer a:hover {
+  text-decoration: none;
+}
